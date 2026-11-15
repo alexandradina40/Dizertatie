@@ -1,0 +1,28 @@
+SETUP:
+
+cd D:\Master\dizertatie\Dizertatie\shot-by-shot
+venv\Scripts\activate
+
+set GEMINI_API_KEY=CHEIA_TA_NOUA
+
+cd stage1
+
+python main_gemeni.py ^
+  --dataset cmdad ^
+  --anno_path ..\resources\annotations\cmdad_small_2012.csv ^
+  --charbank_path ..\resources\charbanks\cmdad_charbank.json ^
+  --video_dir ..\..\CondensedMovies\data\videos ^
+  --save_dir ..\outputs ^
+  --num_workers 0
+
+
+cd ..\stage2
+python main_gemeni.py ^
+  --dataset cmdad ^
+  --mode single ^
+  --pred_path ..\outputs\cmdad_ads\stage1_gemini.csv ^
+  --save_dir ..\outputs
+
+cd ..
+
+python burn_ad_overlay.p

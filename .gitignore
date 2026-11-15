@@ -1,0 +1,39 @@
+# Mediul virtual
+shotbyshot_env/
+
+# Cache modele (gol acum, dar previi accidente)
+models_cache/
+
+# Fisiere Python compilate
+__pycache__/
+*.pyc
+
+# Repo-ul autorilor
+CondensedMovies/
+
+# Chei API
+.env
+
+# Fisiere sistem
+.DS_Store
+Thumbs.db
+
+# Videoclipurile descarcate de pe YouTube (zeci de MB fiecare)
+data/videos/
+
+# Rezultatele rularilor (CSV-uri generate, logs, etc.)
+outputs/
+
+# Fisiere audio/video intermediare
+*.mp4
+*.mkv
+*.avi
+*.wav
+*.mp3
+*.srt
+*.tar
+
+# IDE / editoare
+.vscode/
+.idea/
+*.swp

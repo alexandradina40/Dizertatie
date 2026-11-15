@@ -1,0 +1,10 @@
+torch==2.1.2
+torchvision==0.16.2
+numpy<2
+transformers==4.46.0
+Pillow
+pandas
+decord
+opencv-python==4.10.0.84
+yt-dlp
+google-genai

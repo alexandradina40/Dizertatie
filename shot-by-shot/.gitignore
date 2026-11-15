@@ -1,0 +1,16 @@
+# Mediul virtual
+shotbyshot_env/
+
+# Cache modele (gol acum, dar previi accidente)
+models_cache/
+
+# Fisiere Python compilate
+__pycache__/
+*.pyc
+
+# Chei API
+.env
+
+# Fisiere sistem
+.DS_Store
+Thumbs.db
