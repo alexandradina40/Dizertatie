@@ -8,3 +8,5 @@ decord
 opencv-python==4.10.0.84
 yt-dlp
 google-genai
+edge-tts
+faster-whisper
